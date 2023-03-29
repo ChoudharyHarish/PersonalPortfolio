@@ -1,0 +1,126 @@
+.main{
+    margin-top: 0;
+    padding: 220px 0px 100px 0px;
+    position: relative;
+    background-color: #17001a;
+    
+    background: url('../assets/img/banner-bg.png') no-repeat center center/cover;
+}
+@media only screen and (min-width:0px) and (max-width:720px) {
+        .main{
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+        .main p{
+            width: 100% !important; 
+        }
+        .main h1{
+            height: 140px;
+        }
+        .btn-container{
+            /* flex-direction: row !important; */
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .main button{
+            width: 100% !important;
+        }
+        .main a{
+            width: 60%;
+            padding: 10px 0px;
+        }
+        .main img{
+            /* border: 3px solid green; */
+            max-width: 70% !important;
+            margin: auto;
+            position: absolute !important;
+            top: 25%;
+            opacity: 0.5;
+            left: 15%;
+            /* animation: none  !important; */
+        }
+}
+
+.img-resp{
+    height: auto;
+    max-width: 100%;
+}
+.main h1{
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.7px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+.main p{
+    color: rgba(225, 225, 225, 0.8);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    width: 90%;
+    line-height: 1.5;
+}
+
+.main button{
+    padding: 1.2rem 0.5rem;
+    background-color: transparent;
+    width: 30%;
+    margin: 0.8rem 0rem;
+    color: #fff;
+}
+
+.border-none{
+    border: none !important;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.download{
+    color: #121212 !important;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #fff;
+}
+.download::before{
+    position: absolute;
+    content: '';
+    height:100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: -1;
+    top:0;
+    left:0;
+    transition: 0.3s ease-in-out;
+}
+.download:hover::before{
+    width: 0%;
+}
+.download:hover{
+    color: #fff !important;
+    border: 2px solid #fff;
+}
+
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main img{
+    animation: topDown 3s linear infinite;
+}
+
+@keyframes topDown {
+    0%{
+        transform: translateY(-25px);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
+}

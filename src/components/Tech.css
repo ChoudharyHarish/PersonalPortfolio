@@ -1,0 +1,13 @@
+.tech{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.technology{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
