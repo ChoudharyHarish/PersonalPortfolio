@@ -9,9 +9,7 @@ import { slideIn } from '../utils/motion';
 
 const Contact = () => {
 
-  const service_id = 'service_yea0dlj';
-  const template_id = 'template_ezg2z2k';
-  const key = '8iuN1ZAncj70JOuSy';
+  
 
   const [isLoading,setIsLoading]=useState(false);
 
@@ -29,12 +27,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
         e.preventDefault();
 
-          emailjs.send(service_id,template_id,{
+          emailjs.send(process.env.REACT_APP_service_id,process.env.REACT_APP_template_id,{
             from_name:form.name,
             to_name : "Harish",
             from_email:form.email,
             message : form.message
-          },key).then(() => {
+          },process.env.REACT_APP_key).then(() => {
             setIsLoading(false)
             alert("Your message is recieved by me,I will reach you soon.")
             setForm({
