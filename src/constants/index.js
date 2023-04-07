@@ -7,12 +7,16 @@ import {
     nodejs,
     mongodb,
     git,
-    github,
+    mysql,
+    cpp,
+    python,
     project1,
     project2,
-    project3
+    project3,
+    project4,
+    project5,
+    project6,
   } from "../assets/img";
-
   
   const technologies = [
     {
@@ -48,8 +52,16 @@ import {
       icon: git,
     },
     {
-      name : 'github',
-      icon : github
+      name : 'mysql',
+      icon : mysql
+    },
+    {
+      name:'cpp',
+      icon:cpp
+    },
+    {
+      name : 'python',
+      icon:python
     }
   ];
   
@@ -59,7 +71,7 @@ import {
     {
       name: "Memories",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "MERN Stack Application with User Authentication, user can perform all CRUD operations, User can search and filter posts.User can go to different pages.",
       tags: [
         {
           name: "react",
@@ -73,14 +85,41 @@ import {
           name: "nodejs",
           color: "pink-text-gradient",
         },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
       ],
       image: project1,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/ChoudharyHarish/Memories-Mern",
+      live_url: "https://mern-memories17.netlify.app"
+    },
+    {
+      name: "Shoppingify",
+      description:
+      "A web-application that allows users to make their shoppinglist, edit,mark the items as completed and provides user with the history of his/her purchases, with a complete user authentication system also.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Material UI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Nodejs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image:project2,
+      source_code_link: "https://github.com/ChoudharyHarish/Shoppingify",
+      live_url:"https://shoppingifyreact.vercel.app/"
     },
     {
       name: "Chat Application",
       description:
-        "Web application that enables users to chat in real-time.Built using Mern-Stack and Socket.io",
+        "Web application that enables users to chat in real-time.Front-End is build with the help of React ands Redux and backend is built using Nodejs and Socket.io",
       tags: [
         {
           name: "react",
@@ -96,28 +135,74 @@ import {
         },
       ],
       image:project2,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/ChoudharyHarish/Mern-Whatsapp-Clone",
+      live_url:"https://mern-whatsapp-clone-h38r.vercel.app/"
     },
     {
-      name: "Shoppingify",
+      name: "Find-me-Hotel",
       description:
-        "A web-application that allows users to make their shoppinglist, edit,mark the items as completed and provides user with the history of his/her purchases",
+        "A front-end application built with the help of react and tailwind css help users to find hotels according to their preferences",
       tags: [
         {
           name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "Material UI",
+          name: "Tailwind-css",
           color: "green-text-gradient",
         },
         {
-          name: "Nodejs",
+          name: "Javascript",
           color: "pink-text-gradient",
         },
       ],
-      image:project3,
-      source_code_link: "https://github.com/",
+      image:project4,
+      source_code_link: " https://github.com/ChoudharyHarish/Hotel-Reservation",
+      live_url:"https://reactfindhotel.netlify.app/"
+    },
+    {
+      name: "Test-Your-GK",
+      description:
+        "Do you know much about geography ?, Test your gk now with this application.Built using HTML,CSS and Javascript, React. Api is used to fetch different Questions ",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image:project5,
+      source_code_link: "https://github.com/ChoudharyHarish/CountryQuiz",
+      live_url:"https://choudharyharish.github.io/CountryQuiz/"
+    },
+    {
+      name: "SpaceTourism",
+      description:
+        "Are u interested in exploring Space ? Take a look at this simple yet useful html,css,javascript website that provide you with some space info ",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image:project6,
+      source_code_link: "https://github.com/ChoudharyHarish/SpaceTourism",
+      live_url:"https://choudharyharish.github.io/SpaceTourism/"
     },
   ];
   

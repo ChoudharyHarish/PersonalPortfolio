@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets/img";
+import { github, web_live } from "../assets/img";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from '../hoc/SectionWrap';
@@ -14,8 +14,12 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_url
 }) => {
-  return (
+   
+    const invertVal = index < 3 ? 1 : 0;
+
+   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
@@ -24,13 +28,19 @@ const ProjectCard = ({
           speed: 450,
         }}
        
-       className = 'bg-tertiary p-4 rounded-2xl  w-[auto] sm:w-[360px]'>
+       className = 'bg-tertiary p-4 rounded-2xl   w-[auto] sm:w-[360px]'>
           <div className = "relative">
-              <img className="object-contain rounded-2xl" src={image} alt="" />
+              <img className="object-contain rounded-2xl" src={image} alt=""/>
               <div className="absolute inset-0  flex justify-end m-3 card-img_hover">
               <div  className="black-graident h-10 w-10 rounded-full cursor-pointer" onClick={() => window.open(source_code_link,"_blank")} >
 
-                <img className="object-contain" src={github} alt="" />
+  <img className="object-contain" src={github} alt="" style={{filter:`invert(${invertVal})`}} />
+              </div>
+              </div>
+              <div className="absolute bottom-0  right-0 flex justify-end m-3 card-img_hover">
+              <div  className="black-graident h-10 w-10 rounded-full cursor-pointer" onClick={() => window.open(live_url,"_blank")} >
+
+              <img className="object-contain" src={web_live} alt=""/>
               </div>
               </div>
               </div>
@@ -59,7 +69,7 @@ const Works = () => {
   
       <div className='mt-20 flex flex-wrap gap-4 justify-center'>
         {projects.map((project, index) => (
-          <ProjectCard key={index} index={index} {...project} />
+          <ProjectCard key={index} index={index} {...project}/>
         ))}
       </div>
     </>

@@ -6,6 +6,7 @@ import Work from './components/Works';
 import Contact from './components/Contact';
 import { StarsCanvas } from './components/canvas';
 import { BrowserRouter } from 'react-router-dom';
+// import dotenv from 'dotenv';
 
 function App() {
   return (

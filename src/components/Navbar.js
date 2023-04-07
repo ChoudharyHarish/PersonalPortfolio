@@ -41,9 +41,9 @@ function ResponsiveAppBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icons">
-              <a href="https://github.com/ChoudharyHarish"><img src={navIcon1} alt="Github" /></a>
-              <a href="https://github.com/ChoudharyHarish"><img src={navIcon2} alt="LinkedIn" /></a>
-              <a href="https://github.com/ChoudharyHarish"><img src={navIcon3} alt="Instagram" /></a>
+              <a href="https://github.com/ChoudharyHarish" target="blank"><img className="github" src={navIcon2} alt="Github" /></a>
+              <a href="https://www.linkedin.com/in/harish-choudhary-a86aa51b2/" target="blank" ><img src={navIcon1} alt="LinkedIn" /></a>
+              <a href="https://www.instagram.com/harish__seervi17/" target="blank"><img src={navIcon3} alt="Instagram" /></a>
             </div>
             <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

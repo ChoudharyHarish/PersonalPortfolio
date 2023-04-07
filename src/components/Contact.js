@@ -18,6 +18,7 @@ const Contact = () => {
     email:"",
     message:""
   })
+  
 
   const handleChange = (e) => {
     const {name,value} = e.target;
@@ -26,7 +27,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
         e.preventDefault();
-
           emailjs.send(process.env.REACT_APP_service_id,process.env.REACT_APP_template_id,{
             from_name:form.name,
             to_name : "Harish",

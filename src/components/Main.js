@@ -61,7 +61,7 @@ const Main = () => {
             <p>Currently open to work</p>
             <div className="btn-container">
             <a href={resume} download> <button className='download'>Download CV</button></a>
-            <button className='border-none' onClick={() => console.log('clicked')}>Let's Connect <ArrowForwardIcon/> </button>
+           <a href='#connect'> <button className='border-none' onClick={() => console.log('clicked')}>Let's Connect <ArrowForwardIcon/> </button> </a>
             </div>
         </Col>
         <Col xs = {12} md={6} lg={5}>
