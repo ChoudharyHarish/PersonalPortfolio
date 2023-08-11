@@ -52,7 +52,7 @@ const Main = () => {
 
 
     return (
-        <section className='main'>
+    <section className='main'>
        <Container>
        <Row className='align-items-center'>
         <Col xs = {12} md = {6} lg = {7}>

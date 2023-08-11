@@ -14,7 +14,7 @@ import web_live from './live-chat.png';
 
 import project1 from './memories.png';
 import project2 from './shoppingify.png';
-import project3 from './mern-whatsapp.jpeg';
+import project3 from './ShopholicCentral.png';
 import project4 from "./hotel-find.png";
 import project5 from "./country-quiz.png";
 import project6 from "./space-tourism.png";

@@ -117,16 +117,16 @@ import {
       live_url:"https://shoppingifyreact.vercel.app/"
     },
     {
-      name: "Chat Application",
+      name: "Shopholic Central",
       description:
-        "Web application that enables users to chat in real-time.Front-End is build with the help of React ands Redux and backend is built using Nodejs and Socket.io",
+        "E-Commerce application with full user authentication, cart functionality and advanced searching,sorting,paginating functionalites.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "socket.io",
+          name: "redux",
           color: "green-text-gradient",
         },
         {
@@ -134,9 +134,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image:project2,
-      source_code_link: "https://github.com/ChoudharyHarish/Mern-Whatsapp-Clone",
-      live_url:"https://mern-whatsapp-clone-h38r.vercel.app/"
+      image:project3,
+      source_code_link: "https://github.com/ChoudharyHarish/Shopholic_Central",
+      live_url:"https://shopholic-central17.vercel.app"
     },
     {
       name: "Find-me-Hotel",
